@@ -26,6 +26,14 @@
 .menu {
 	background-color: lightgray;
 	border: 1px solid darkgray;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.nav__list {
+	margin: 0;
 }
 
 .nav {
@@ -45,8 +53,124 @@
 }
 
 .nav__button {
-	margin: 16px;
-	padding: 0 10px;
+	margin-left: 16px;
 }
 .button {
 }
+
+.header__logo {
+	/* flex: 0 0 70px; */
+}
+
+.header__nav {
+	flex: 1;
+}
+
+.mobile-show {
+	display: none;
+}
+
+.burger {
+	width: 40px;
+	height: 20px;
+	position: relative;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+}
+
+.burger span {
+	display: block;
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	background: #d3531a;
+	border-radius: 0;
+	opacity: 1;
+	left: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+}
+
+.burger span:nth-child(1) {
+	top: 0px;
+}
+
+.burger span:nth-child(2) {
+	top: 9px;
+}
+
+.burger span:nth-child(3) {
+	top: 18px;
+}
+.menu-open {
+
+}
+.burger.active {
+
+}
+
+.menu-m {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100vh;
+	background: tomato;
+	transform: translateY(-150%);
+	transition: all .3s;
+}
+
+.menu-m__close {
+	position: fixed;
+	right: 50px;
+	top: 50px;
+}
+
+.menu-open .menu-m {
+	transform: translateY(0);
+}
+
+.menu-m .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.menu-m__item {
+	border-bottom: 3px solid #333;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.menu-m ul {
+	font-size: 30px;
+	font-weight: bold;
+	list-style: none;
+}
+
+@media (max-width: 700px) {
+	.mobile-hide {
+		display: none;
+	}
+
+	.mobile-show {
+		display: block;
+	}
+}
+
