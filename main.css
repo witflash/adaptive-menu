@@ -1,35 +1,52 @@
-.header {
+body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	background: white;
+}
+
+.body__wrapper {
+}
+
+main {
+	padding: 20px;
+}
+
+.header {
 	margin: 0 auto;
-	max-width: 900px;
+}
+
+.header__top {
+	text-align: right;
 }
 
 .policy {
-
 }
 
 .policy__list {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
 	list-style-type: none;
 	text-align: right;
+	font-size: 0.8em;
 }
 
 
 .policy__item {
 	display: inline-block;
-	padding-right: 10px;
-}
-
-.policy__item:last-child {
-	padding-right: 0;
+	padding: 10px 10px 5px 10px;
 }
 
 .menu {
+	padding: 20px;
 	background-color: lightgray;
 	border: 1px solid darkgray;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px;
+	font-size: 0.9em;
 }
 
 .nav__list {
