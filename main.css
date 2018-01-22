@@ -10,9 +10,6 @@ p {
 	padding-left: 1em;
 }
 
-.body__wrapper {
-}
-
 main {
 	padding: 20px;
 }
@@ -23,9 +20,6 @@ main {
 
 .header__top {
 	text-align: right;
-}
-
-.policy {
 }
 
 .policy__list {
@@ -151,12 +145,6 @@ main {
 
 .burger span:nth-child(3) {
 	top: 18px;
-}
-.menu-open {
-
-}
-.burger.active {
-
 }
 
 .footer {
