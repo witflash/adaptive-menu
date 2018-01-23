@@ -2,20 +2,34 @@
 
   $(function () {
     menu.init();
+    menu.closeMenu();
   });
 
   var menu = {
-    $el : $('.js-menu'),
+    $el: $('.js-menu'),
     triggerClass: '.js-menu-trigger',
+
     init: function() {
       if (!this.$el.length) return;
       $(this.triggerClass).on('click', this.toggle);
       this.clone();
     },
+
+    closeMenu: function() {
+      var $close = $('.js-menu-close');
+      $close.on('click', this.remove);
+    },
+
     toggle: function() {
       $('html').toggleClass('menu-open');
       // $(document).trigger("menu:open");
     },
+
+    remove: function() {
+      console.log('REMOVE CLASS');      
+      $('html').removeClass('menu-open');
+    },
+
     clone: function() {
       // @todo: clone all elements
       // dynamic markup
