@@ -20,6 +20,23 @@
       // @todo: clone all elements
       // dynamic markup
       // sort by data-menu-order
+      var menuMobile = '.js-mobile-menu',
+          menuItems = '.js-menu-item',
+          wrapper = 'menu-m__item';
+
+      $(menuItems).clone()
+                  .sort(compare)
+                  .removeClass()
+                  .addClass(wrapper)
+                  .appendTo(menuMobile);
+
+      function compare(a, b) {
+        return ($(a).data('menu-order') - $(b).data('menu-order'));
+      }
+      // var itemMobile = '<div class="menu-m__item">' + $(this).html() + '</div>';
+      
+      
+
     }
   }
 

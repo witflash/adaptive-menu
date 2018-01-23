@@ -67,6 +67,7 @@ main {
 	flex: 1 0 auto;
 	padding-right: 10px;
 	text-align: center;
+	transition-duration: 0.3s;	
 }
 
 .nav__item:last-child {
@@ -85,6 +86,10 @@ main {
 	text-transform: uppercase;
 	color: white;
 	cursor: pointer;
+}
+
+.button:hover {
+	opacity: 0.8;
 }
 
 .header__logo {
@@ -199,6 +204,19 @@ main {
 	font-size: 30px;
 	font-weight: bold;
 	list-style: none;
+	display: block;
+	text-align: center;
+	border: none;
+}
+
+.menu-m .policy__list {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.menu-m .button {
+	background-color: #0277bd;
+	font-size: 15px;
 }
 
 @media (max-width: 700px) {
@@ -211,3 +229,11 @@ main {
 	}
 }
 
+.menu a, .menu-m a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.menu li:hover, .menu-m li:hover {
+	transform: scale(1.2);
+} 
