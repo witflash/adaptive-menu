@@ -219,6 +219,15 @@ main {
 	font-size: 15px;
 }
 
+.menu a, .menu-m a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.menu li:hover, .menu-m li:hover {
+	transform: scale(1.2);
+}
+ 
 @media (max-width: 700px) {
 	.mobile-hide {
 		display: none;
@@ -228,12 +237,3 @@ main {
 		display: block;
 	}
 }
-
-.menu a, .menu-m a {
-	text-decoration: none;
-	color: inherit;
-}
-
-.menu li:hover, .menu-m li:hover {
-	transform: scale(1.2);
-} 
