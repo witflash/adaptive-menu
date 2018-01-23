@@ -76,8 +76,8 @@ main {
 
 .nav__button {
 	margin-left: 20px;
-	margin-right: 20px;
 }
+
 .button {
 	padding: 6px 10px;
 	background-color: #ff5c8d;
@@ -107,6 +107,7 @@ main {
 }
 
 .burger {
+	display: none;
 	width: 30px;
 	height: 20px;
 	position: relative;
@@ -227,13 +228,17 @@ main {
 .menu li:hover, .menu-m li:hover {
 	transform: scale(1.2);
 }
- 
+
 @media (max-width: 700px) {
 	.mobile-hide {
 		display: none;
 	}
 
 	.mobile-show {
+		display: block;
+	}
+
+	.burger {
 		display: block;
 	}
 }
