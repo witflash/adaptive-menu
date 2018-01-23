@@ -6,6 +6,7 @@
 	<title>Menu Sample</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
 	<div class="body__wrapper">
@@ -13,26 +14,26 @@
 			<div class="policy header__top mobile-hide js-menu-item" data-menu-order="2">
 				<ul class="policy__list">
 					<li class="policy__item">
-						Privacy Policy
+						<a href="/">Privacy policy</a>
 					</li>
 					<li class="policy__item">
-						Guarantee
+						<a href="/">Guarantee</a>
 					</li>
 				</ul>
 			</div>
 			<div class="menu">
-				<div class="header__logo">LOGO</div>
+				<div class="header__logo"><span class="fa fa-cubes"></span></div>
 				<nav class="nav header__nav mobile-hide js-menu-item" data-menu-order="0">
 					<ul class="nav__list">
-						<li class="nav__item">Home</li>
-						<li class="nav__item">About</li>
-						<li class="nav__item">Blog</li>
-						<li class="nav__item">Portfolio</li>
-						<li class="nav__item">Contacts</li>
+						<li class="nav__item"><a href="/">Home</a></li>
+						<li class="nav__item"><a href="#about">About</a></li>
+						<li class="nav__item"><a href="#blog">Blog</a></li>
+						<li class="nav__item"><a href="#portfolio">Portfolio</a></li>
+						<li class="nav__item"><a href="#contacts">Contacts</a></li>
 					</ul>
 				</nav>
 				<div class="nav__button mobile-hide js-menu-item" data-menu-order="1">
-					<button class="button" type="button">Cart</button>
+					<button class="button" type="button"><span class="fa fa-shopping-cart"></span> Cart</button>
 				</div>
 				<div class="burger header__burger js-menu-trigger">
 					<span class="burger__i"></span>
@@ -44,55 +45,32 @@
 		<main>
 			<article>
 				<section>
-					<h2>ABOUT</h2>
+					<h2 id="about">ABOUT</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero earum nihil soluta, itaque molestiae tempore tempora aliquid consequatur repellat exercitationem esse id! Eligendi provident fugit temporibus id, laborum numquam alias.</p>
 				</section>
 				<section>
-					<h2>ABOUT</h2>
+					<h2 id="blog">BLOG</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero earum nihil soluta, itaque molestiae tempore tempora aliquid
 						consequatur repellat exercitationem esse id! Eligendi provident fugit temporibus id, laborum numquam alias.</p>
 				</section>
 				<section>
-					<h2>ABOUT</h2>
+					<h2 id="portfolio">PORTFOLIO</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero earum nihil soluta, itaque molestiae tempore tempora aliquid
 						consequatur repellat exercitationem esse id! Eligendi provident fugit temporibus id, laborum numquam alias.</p>
 				</section>
 				<section>
-					<h2>ABOUT</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero earum nihil soluta, itaque molestiae tempore tempora aliquid
-						consequatur repellat exercitationem esse id! Eligendi provident fugit temporibus id, laborum numquam alias.</p>
-				</section>
-				<section>
-					<h2>ABOUT</h2>
+					<h2 id="contacts">CONTACTS</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero earum nihil soluta, itaque molestiae tempore tempora aliquid
 						consequatur repellat exercitationem esse id! Eligendi provident fugit temporibus id, laborum numquam alias.</p>
 				</section>
 			</article>
 		</main>
-		<footer>FOOTER</footer>
+		<footer class="footer">FOOTER</footer>
 	</div>
 	<div class="menu-m">
-		<div class="container">
-			<div class="menu-m__close js-menu-trigger">CLOSE</div>
-			<div class="menu-m__item">
-				<nav>
-					<ul>
-						<li>HOME</li>
-						<li>ABOUT</li>
-						<li>BLOG</li>
-						<li>PORTFOLIO</li>
-						<li>CONTACTS</li>
-					</ul>
-				</nav>
-			</div>
-			<div class="menu-m__item">
-				<button class="btn">CART</button>
-			</div>
-			<div class="menu-m__item">
-				<ul>
-					<li>Privacy policy</li>
-					<li>Guarantee</li>
-				</ul>
+		<div class="container js-mobile-menu">
+			<div class="menu-m__close js-menu-trigger">
+				<span class="fa fa-times"></span>
 			</div>
 		</div>
 	</div>
